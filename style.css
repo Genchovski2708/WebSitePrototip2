@@ -1,0 +1,371 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+ body{
+   /* background-image: url("images/background.png");
+    background-repeat: repeat;
+    background-size: cover;
+    */
+     background-color: white;
+}
+/*
+nav {
+ //
+    background-image: url("images/background.png");
+    background-repeat: repeat;
+    background-size: cover;
+  //
+    background-color: white;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    padding: 10px;
+}
+
+nav li {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: cadetblue;
+    transition: background-color 0.5s ease;
+}
+nav li:hover{
+    background-color: lightblue;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+*/
+header {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px 20px;
+}
+
+.logo img {
+    margin-left: 10%;
+    max-height: 60px;
+    margin-right: 20px;
+}
+
+nav ul {
+    position: relative;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin-right: 40px;
+}
+
+nav a {
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 1.4em;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: #999;
+}
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 20%;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 10px 0;
+    z-index: 10;
+}
+
+.dropdown-menu li {
+    display: block;
+    text-align: left;
+}
+
+.dropdown-menu li a {
+    color: #333;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: block;
+    white-space: nowrap;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #eee;
+}
+
+nav ul li.dropdown:hover > ul {
+    display: block;
+}
+
+nav ul li.dropdown > ul li {
+    display: block;
+    width: 100%;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #eee;
+}
+
+.dropdown-menu-partners {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 40%;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 10px 0;
+    z-index: 10;
+}
+
+.dropdown-menu-partners li {
+    display: block;
+    text-align: left;
+}
+
+.dropdown-menu-partners li a {
+    color: #333;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: block;
+    white-space: nowrap;
+}
+
+.dropdown-menu-partners li a:hover {
+    background-color: #eee;
+}
+.dropdown-menu-partners li a:hover {
+    background-color: #eee;
+}
+nav ul li.dropdown-partners:hover > ul {
+    display: block;
+}
+
+nav ul li.dropdown-partners > ul li {
+    display: block;
+    width: 100%;
+}
+.hero {
+    background-image: url('images/background.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 500px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    width: 100%;
+    float: left;
+}
+.hero h1 {
+    margin-top: 4%;
+    width: 80%;
+    font-size: 3rem;
+    text-shadow: 2px 2px #333;
+}
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    /*background-image: url("images/background.png");
+    background-repeat: repeat;
+    background-size: cover;
+     */
+    background-color: white;
+    width: 20%;
+    float: right;
+    text-align: center;
+}
+
+
+.sidebar-header{
+    color: black;
+}
+.sidebar-block {
+    width: 90%;
+    margin: 0 auto;
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 20px;
+    flex: 1;
+}
+
+.sidebar-block:hover {
+    background-color: #ccc;
+}
+
+.sidebar-block a {
+    display: block;
+    color: #000;
+    text-decoration: none;
+}
+.sidebar-block h2,
+.sidebar-block p {
+    color: black;
+    text-decoration: none;
+}
+.sidebar-block a:hover {
+    text-decoration: underline;
+}
+.sidebar-block-header {
+    font-size: 20px;
+    margin-top: 0;
+}
+
+.sidebar-block-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.sidebar-block-text {
+    font-size: 16px;
+    margin-top: 0;
+}
+.content-block {
+    width: 100%;
+    margin-right: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.container {
+    display: grid;
+    grid-template-areas:
+    "menu"
+    "main";
+    grid-template-rows: auto 1fr;
+    height: 100vh;
+}
+
+.menu {
+    grid-area: menu;
+}
+
+.main {
+    grid-area: main;
+    display: grid;
+    grid-template-areas:
+    "left sidebar";
+    grid-template-columns: 4fr 1fr;
+}
+
+.left {
+    grid-area: left;
+    width: 100%;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    width: 100%;
+}
+
+.logo-column {
+    width: 25%;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-column img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+.block {
+    max-width: 75%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.block p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin-bottom: 1.5em;
+}
+.block-heading {
+    font-size: 2em;
+    margin-bottom: 1em;
+    font-family: "Merriweather", serif;
+}
+.indent{
+    margin-left: 50px;
+    padding: 0;
+}
+.indent ul li{
+    margin-top: -15px;
+}
+#project-desctiption-header{
+    margin-top: 20px;
+}
+.sub-header {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+    font-family: "Merriweather", serif;
+    align-self: flex-start;
+}
+.indent ol{
+    list-style: decimal;
+}
+.indent ol li::marker {
+    font-size: 1.2em;
+}
+p.indent{
+    margin-bottom: 10px;
+}
+.indent p{
+    margin-bottom: 10px;
+}
+.double-indent{
+    margin-left: 100px;
+}
+.double-indent ol{
+    margin-top: -20px;
+}
+.align-left{
+    align-self: flex-start;
+}
+@media (max-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    /* Change the size of the left and right columns */
+    .main {
+        width: 100%;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    /* Adjust the height of the sidebar blocks */
+    .sidebar-block {
+        height: auto;
+    }
+}
