@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -166,7 +167,7 @@ nav ul li.dropdown-partners > ul li {
     width: 100%;
 }
 .hero {
-    background-image: url('images/background.jpg');
+    background-image: url('images/background.gif');
     background-size: 100% 100%;
     background-repeat: no-repeat;
     height: 500px;
@@ -368,4 +369,26 @@ p.indent{
     .sidebar-block {
         height: auto;
     }
+}
+#home-header{
+    opacity: 0.5;
+    font-family: 'Eczar', serif;
+    color: indigo;
+    font-style: italic;
+    line-height: 1em;
+}
+.logo-header-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-header img {
+    max-height: 60px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.logo-header h1 {
+    font-size: 2em;
+    font-weight: bold;
 }
