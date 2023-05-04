@@ -14,169 +14,121 @@
 
 }
 
-/*
-nav {
- //
-    background-image: url("images/background.png");
-    background-repeat: repeat;
-    background-size: cover;
-  //
-    background-color: white;
-}
-
-nav ul {
-    display: flex;
-    justify-content: space-evenly;
-    list-style: none;
-    padding: 10px;
-}
-
-nav li {
-    padding: 10px;
-    border-radius: 10px;
-    background-color: cadetblue;
-    transition: background-color 0.5s ease;
-}
-nav li:hover{
-    background-color: lightblue;
-}
-nav a {
-    text-decoration: none;
-    color: white;
+.menu-container{
     font-size: 20px;
-    font-weight: bold;
+    color: black;
 }
-*/
-header {
-    background-color: white;
+.menu-container a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    text-decoration: none;
+}
+.menu-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 3px 20px;
+    padding: 10px;
+    width: 80%;
+    margin: auto;
 }
 
-.logo img {
-    margin-left: 10%;
-    max-height: 60px;
-    margin-right: 20px;
+.menu-left a, .menu-right a {
+    text-decoration: none;
+    margin-right: 10px;
 }
-/*
-.menu{
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-} 
- */
-nav ul {
-    position: relative;
+
+.menu-left a:last-child {
+    margin-right: 0;
+}
+
+.menu-right {
     display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+    align-items: center;
 }
 
-nav li {
-    margin-right: 40px;
+.dropdown-language {
+    position: relative;
 }
 
-nav a {
-    font-family: 'Roboto', sans-serif;
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    font-size: 1.4em;
-    transition: all 0.3s ease;
+.dropdown-language span {
+    cursor: pointer;
 }
 
-nav a:hover {
-    color: #999;
-}
-.dropdown-menu {
+.dropdown-content {
     display: none;
     position: absolute;
-    top: 100%;
-    left: 20%;
-    background-color: #fff;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 10px 0;
-    z-index: 10;
+    z-index: 1;
 }
 
-.dropdown-menu li {
+.dropdown-content a {
     display: block;
-    text-align: left;
+    text-align: center;
 }
 
-.dropdown-menu li a {
-    color: #333;
-    font-size: 1.2em;
-    font-weight: bold;
-    padding: 10px 20px;
+.dropdown-language:hover .dropdown-content {
+    display: block;
+}
+
+.contact-button {
+    padding: 10px 15px;
+    background-color: #2196F3;
+    color: black;
+    border-radius: 5px;
     text-decoration: none;
-    display: block;
-    white-space: nowrap;
+    margin-left: 10px;
+    transition: filter 0.3s ease-out;
+}
+.contact-button:hover{
+    filter: brightness(140%);
+}
+.menu-middle a {
+    text-decoration: none;
+    padding: 0 20px;
+
 }
 
-.dropdown-menu li a:hover {
-    background-color: #eee;
+
+.fa-facebook, .fa-instagram {
+    /*font-size: 24px;
+
+     */
+}
+.fa-facebook:hover, .fa-instagram:hover {
+    color: #0077b3;
 }
 
-nav ul li.dropdown:hover > ul {
-    display: block;
+.menu-item {
+    position: relative;
+    display: inline-block;
 }
 
-nav ul li.dropdown > ul li {
-    display: block;
-    width: 100%;
-}
-.dropdown-menu{
-    z-index: 10;
-}
-.dropdown-menu li a:hover {
-    background-color: #eee;
-}
-
-.dropdown-menu-partners {
-    display: none;
+.submenu {
     position: absolute;
     top: 100%;
-    left: 40%;
+    left: 0;
+    z-index: 1;
+    display: none;
+    min-width: 150px;
+}
+
+.menu-item:hover .submenu {
+    display: block;
+}
+
+.submenu a {
+    display: block;
+    padding: 10px;
     background-color: #fff;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 10px 0;
-    z-index: 10;
-}
-
-.dropdown-menu-partners li {
-    display: block;
-    text-align: left;
-}
-
-.dropdown-menu-partners li a {
-    color: #333;
-    font-size: 1.2em;
-    font-weight: bold;
-    padding: 10px 20px;
+    color: #000;
     text-decoration: none;
-    display: block;
-    white-space: nowrap;
 }
 
-.dropdown-menu-partners li a:hover {
-    background-color: #eee;
-}
-.dropdown-menu-partners li a:hover {
-    background-color: #eee;
-}
-nav ul li.dropdown-partners:hover > ul {
-    display: block;
+.submenu a:hover {
+    background-color: #ddd;
 }
 
-nav ul li.dropdown-partners > ul li {
-    display: block;
-    width: 100%;
-}
 .hero {
     background-image: url('images/background.gif');
     background-size: 100% 100%;
@@ -362,9 +314,9 @@ p.indent{
 .double-indent ol{
     margin-top: -20px;
 }
-.align-left{
+/*.align-left{
     align-self: flex-start;
-}
+}*/
 @media (max-width: 768px) {
     .container {
         display: flex;
@@ -406,6 +358,13 @@ p.indent{
     font-size: 2em;
     font-weight: bold;
 }
+.block p{
+    width: 80%;
+}
+.block ul, .block ol{
+    width: 70%;
+}
+
 .block{
     background-color: white;
     padding: 0 2%;

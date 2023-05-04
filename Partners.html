@@ -8,38 +8,49 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gabriela&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-...." crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" integrity="sha512-...." crossorigin="anonymous"></script>
 </head>
 <body>
-<header>
-    <div class="logo">
-        <img src="images/logo-menu3.jfif" alt="Your Logo">
+<div class="menu-container">
+    <div class="menu-left">
+        <a href="https://www.facebook.com/slavjanskiuniverzitet/"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/slavjanskiuniverzitet/"><i class="fab fa-instagram"></i></a>
     </div>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li class="dropdown">
-                <a href="Project%20Information.html">Project Information &#9662;</a>
-                <ul class="dropdown-menu">
-                    <li><a href="Project%20Information.html#project-desctiption-header">Project Description</a></li>
-                    <li><a href="Project%20Information.html#objectives">Objectives</a></li>
-                    <li><a href="Project%20Information.html#expected-results">Expected Results</a></li>
-                    <li><a href="Project%20Information.html#target-group">Target Group</a></li>
+    <div class="menu-middle">
+        <a href="index.html">Home</a>
+        <div class="menu-item">
+            <a href="Project%20Information.html">Project Information &#9662;</a>
+            <div class="submenu">
+                <a href="Project%20Information.html#project-desctiption-header">Project Description</a>
+                <a href="Project%20Information.html#objectives">Objectives</a>
+                <a href="Project%20Information.html#expected-results">Expected Results</a>
+                <a href="Project%20Information.html#target-group">Target Group</a>
+            </div>
+        </div>
 
-                </ul>
-            </li>
-            <li class="dropdown-partners">
-                <a href="Partners.html">Partners &#9662;</a>
-                <ul class="dropdown-menu-partners">
-                    <li><a href="Partners.html#institute-of-culture-and-art">Institute Of Culture And Art</a></li>
-                    <li><a href="Partners.html#the-kreativ-research-association">The Kreativ Research Association</a></li>
-                    <li><a href="Partners.html#project-funders">Project funders</a></li>
-                </ul>
-            </li>
-            <li><a href="#">Activities</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
-</header>
+        <div class="menu-item">
+            <a href="Partners.html">Partners &#9662;</a>
+            <div class="submenu">
+                <a href="Partners.html#institute-of-culture-and-art">Institute Of Culture And Art</a>
+                <a href="Partners.html#the-kreativ-research-association">The Kreativ Research Association</a>
+                <a href="Partners.html#project-funders">Project Funders</a>
+            </div>
+        </div>
+
+        <a href="#">Activities</a>
+    </div>
+    <div class="menu-right">
+        <div class="dropdown-language">
+            <span>MK</span>
+            <div class="dropdown-content">
+                <a href="#">EN</a>
+                <a href="#">MK</a>
+            </div>
+        </div>
+        <a href="#" class="contact-button">Contact</a>
+    </div>
+</div>
     <main class="backgroung-changed">
         <div class="block">
             <h1 id="project-desctiption-header" class="block-heading">Партнери</h1>
@@ -49,7 +60,9 @@
             <div class="logo-header-container">
                 <h1 id="institute-of-culture-and-art" class="block-heading">Институтот за култура и уметност</h1>
                 <div class="logo-header">
-                    <img src="images/logo3.png" alt="Your Logo">
+                    <a href="https://msu.edu.mk/za-univerzitetot/organizacija/institut-za-kultura/?lang=en&fbclid=IwAR2-lvSCJRE3P13LO1BbpxxiEr08YTS-tiBC3w2-BIFiWHYwsFZ2-XW2fC4">
+                        <img src="images/logo3.png" alt="Your Logo">
+                    </a>
                 </div>
             </div>
             <p class="indent">Главните активности се Институтот за култура и уметност се поврзани со проблематиката во културата и уметноста, процесите насочени кон развојот и трансформацијата на современите предизвици, условени од глобалниот процес во културата, и насочени кон хуманизација на односите во културата.</p>
@@ -72,7 +85,9 @@
             <div class="logo-header-container">
                 <h1 id="the-kreativ-research-association" class="block-heading">Здружението за креативно истражување</h1>
                 <div class="logo-header">
-                    <img src="images/logo4.png" alt="Your Logo">
+                    <a href="https://www.facebook.com/kreativresearch/">
+                        <img src="images/logo4.png" alt="Your Logo">
+                    </a>
                 </div>
             </div>
             <p class="indent">Експертизата на Здружението за креативно истражување (The Kreativ Research Association) е фокусирана на следните полиња:</p>
@@ -94,11 +109,15 @@
             <p class="indent">Здружението за креативно истражување (Kreativ Research Association) развива професионални програми за обука на наставници од додипломски студии во соработка со Караш – Северин Центар за дидактички кадар на универзитетите.</p>
             <div class="logo-header-container">
                 <div class="logo-header">
-                    <img src="images/logo1.png" alt="Your Logo">
+                    <a href="https://erasmus-plus.ec.europa.eu/">
+                        <img src="images/logo1.png" alt="Your Logo">
+                    </a>
                 </div>
                 <h1 id="project-funders" class="block-heading">Финансиери на проектот</h1>
                 <div class="logo-header">
-                    <img src="images/logo2.png" alt="Your Logo">
+                    <a href="https://na.org.mk/">
+                        <img src="images/logo2.png" alt="Your Logo">
+                    </a>
                 </div>
             </div>
 
