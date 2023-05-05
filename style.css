@@ -410,6 +410,12 @@ p.indent{
         width: 100%;
         background-color: white;
     }
+    .menu{
+        font-size: 12px;
+    }
+    .show{
+        display: none;
+    }
     .main{
         display: flex;
         flex-direction: column;
@@ -430,5 +436,11 @@ p.indent{
     }
     .content-block .logo-column{
         width: 100%;
+    }
+    a.contact-button{
+        text-align: center;
+    }
+    #home-header{
+        font-size: 2em;
     }
 }
