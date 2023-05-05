@@ -290,10 +290,11 @@ a:hover{
     font-family: 'Gabriela', serif;
     margin-top: 20px;
 }
-.indent{
+/*.indent{
     margin-left: 50px;
     padding: 0;
-}
+} 
+ */
 .indent ul li{
     margin-top: -15px;
 }
@@ -373,7 +374,7 @@ p.indent{
     width: 90%;
 }
 .block ul, .block ol{
-    width: 70%;
+    width: 80%;
 }
 
 .block{
