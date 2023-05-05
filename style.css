@@ -401,7 +401,7 @@ p.indent{
     color: #0074D9;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 800px) {
     .container {
         display: flex;
         flex-direction: column;
