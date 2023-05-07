@@ -329,25 +329,7 @@ p.indent{
 /*.align-left{
     align-self: flex-start;
 }*/
-@media (max-width: 768px) {
-    .container {
-        display: flex;
-        flex-direction: column;
-    }
-    /* Change the size of the left and right columns */
-    .main {
-        width: 100%;
-    }
 
-    .sidebar {
-        width: 100%;
-    }
-
-    /* Adjust the height of the sidebar blocks */
-    .sidebar-block {
-        height: auto;
-    }
-}
 #home-header{
     opacity: 0.5;
     font-family: 'Gabriela', serif;
@@ -410,11 +392,22 @@ p.indent{
     }
     .menu{
 
-        width: 100%;
+        max-width: 100%;
         background-color: white;
     }
-    .menu{
-        font-size: 12px;
+    .menu, .menu a{
+        font-size: 1rem;
+    }
+    .menu-left{
+        display: flex;
+        flex-direction: column;
+    }
+    .menu-middle{
+        display: flex;
+        flex-direction: column;
+    }
+    .menu-middle a{
+        padding: 0;
     }
     .menu-right{
         display: flex;
@@ -423,6 +416,7 @@ p.indent{
     .contact-button{
         order: -1;
         margin-bottom: 10px;
+        padding: 5px 8px;
     }
     .show{
         display: none;
