@@ -409,11 +409,20 @@ p.indent{
         flex-direction: column;
     }
     .menu{
+
         width: 100%;
         background-color: white;
     }
     .menu{
         font-size: 12px;
+    }
+    .menu-right{
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-button{
+        order: -1;
+        margin-bottom: 10px;
     }
     .show{
         display: none;
