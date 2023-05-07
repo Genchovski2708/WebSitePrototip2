@@ -6,7 +6,12 @@
 }
 p{
     text-align: justify;
+
 }
+.sub-header,a, p, .logo-header{
+    color: #616161;
+}
+
  body{
    /* background-image: url("images/background.png");
     background-repeat: repeat;
@@ -50,6 +55,7 @@ a:hover{
     display: flex;
     align-items: center;
 }
+
 
 .dropdown-language {
     position: relative;
@@ -97,7 +103,18 @@ a:hover{
     padding: 0 20px;
 
 }
+.menu-middle{
+    display: flex;
+    flex-direction: row;
+}
 
+.flag-block img{
+    height: 20px;
+
+}
+.flag-block a:last-of-type img{
+    margin-left: -30px;
+}
 
 .fa-facebook, .fa-instagram {
     /*font-size: 24px;
@@ -392,8 +409,11 @@ p.indent{
     }
     .menu{
 
-        max-width: 100%;
+        width: 90%;
         background-color: white;
+    }
+    .menu-container{
+        justify-content: space-around;
     }
     .menu, .menu a{
         font-size: 1rem;
@@ -402,12 +422,27 @@ p.indent{
         display: flex;
         flex-direction: column;
     }
+    .menu-left a{
+        font-size: 1rem;
+    }
+    .fa-facebook, .fa-instagram, .fa-youtube{
+        font-size: 1.5rem;
+        margin-bottom: 0.2rem;
+    }
     .menu-middle{
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* creates two columns with equal width */
+        gap: 10px;
     }
     .menu-middle a{
         padding: 0;
+    }
+    .flag-block{
+        margin: 0;
+        padding: 0;
+    }
+    .flag-block a:first-of-type img{
+        margin-right: 30px;
     }
     .menu-right{
         display: flex;
