@@ -557,6 +557,9 @@ p.indent{
         display: flex;
         flex-direction: column;
     }
+    .block{
+        padding: 20px;
+    }
     .menu{
 
         width: 90%;
