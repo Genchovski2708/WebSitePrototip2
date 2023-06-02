@@ -30,6 +30,7 @@ p{
 .menu-container a{
     text-decoration: none;
     color: black;
+    font-family: Calibri, sans-serif;
 }
 a:hover{
     text-decoration: none;
@@ -826,4 +827,40 @@ p.indent{
         margin-top: -10px;
     }
 
+}
+.container-information {
+    display: flex;
+    align-items: center;
+}
+
+.image-banner {
+    flex-basis: 40%;
+    padding: 0 20px; /* Optional: Add padding for spacing */
+
+}
+
+.image-banner img {
+    width: 100%;
+}
+
+.content-information {
+    flex-basis: 60%;
+    padding: 0 20px; /* Optional: Add padding for spacing */
+
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    margin-bottom: 10px; /* Optional: Adjust the spacing between menu items */
+}
+.content-information > .backgroung-changed{
+    width: 100%;
+}
+.content-information .block{
+    max-width: 100%;
+    width: 100%;
 }
